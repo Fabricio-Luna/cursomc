@@ -1,5 +1,6 @@
 package com.faber.repositories;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -11,5 +12,6 @@ import com.faber.domain.Categoria;
 public interface CategoriaRepository extends JpaRepository<Categoria, Integer>{
 
 	Optional<Categoria> findById(Integer id);
+	
 
 }
